@@ -4,6 +4,7 @@ namespace Pixney\StatamicTwitter\Tags;
 
 use Statamic\Tags\Tags;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Log;
 
 class StatamicTwitter extends Tags
 {
@@ -17,7 +18,9 @@ class StatamicTwitter extends Tags
         $statamicTwitter      = App::make('twitter');
         $count                = $this->params->get('expiration', 3);
         $expiration           = $this->params->get('expiration', config('statamic-twitter.expiration', 3));
-        return $statamicTwitter->getTweets($count, $expiration)->toArray();
+        $data = $statamicTwitter->getTweets($count, $expiration);
+        Log::info(json_encode($data));
+        return $data->toArray();
     }
 
     /**
