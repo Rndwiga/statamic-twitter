@@ -5,6 +5,6 @@ return [
     'consumer_secret'                => env('TWITTER_CONSUMER_SECRET'),
     'access_token'                   => env('TWITTER_ACCESS_TOKEN'),
     'access_token_secret'            => env('TWITTER_ACCESS_TOKEN_SECRET'),
-    'access_token_secret'            => env('TWITTER_ACCESS_TOKEN_SECRET'),
+    'access_bearer_token'            => env('TWITTER_BEARER_TOKEN'),
     'expiration'                     => env('TWITTER_EXPIRATION', 86400),
 ];
