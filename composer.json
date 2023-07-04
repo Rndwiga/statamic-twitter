@@ -1,5 +1,5 @@
 {
-    "name": "tyondo/statamic-twitter",
+    "name": "tyondo/statamic-twitter-dev",
     "description": "Twitter",
     "license": "MIT",
     "keywords": [
@@ -20,7 +20,7 @@
         "email": "hello@pixney.com"
     },
     "require": {
-        "abraham/twitteroauth": "^2.0",
+        "abraham/twitteroauth": "^5.0.0",
         "php": "^8.1",
         "statamic/cms": "^4.0.0"
     },

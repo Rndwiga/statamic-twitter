@@ -118,6 +118,7 @@ class StatamicTwitter
             config('statamic-twitter.access_token'),
             config('statamic-twitter.access_token_secret')
         );
+        $this->connection->setApiVersion(config('statamic-twitter.api_version'));
     }
 
     /**
